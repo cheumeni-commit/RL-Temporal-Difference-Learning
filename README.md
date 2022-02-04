@@ -39,7 +39,7 @@ Le but étant de trouver la valeur de lambda qui permet d'obtenir les gains (rew
 
 ```BibTeX
 
-    For you MDP 𝑇𝐷(1) looks like this:
+  @misc{For you MDP 𝑇𝐷(1) looks like this:
 
         𝐺=p*(𝑟0+𝑟2+𝑟4+𝑟5+𝑟6)+(1-p)*(𝑟1+𝑟3+𝑟4+𝑟5+𝑟6) avec p = probabilité de transition
 
@@ -49,6 +49,7 @@ Le but étant de trouver la valeur de lambda qui permet d'obtenir les gains (rew
 
     enfin, il faudrait resoudre l'équation suivante pour obtenir la valuer de 𝜆:
         (𝐺0:1-G)+(𝐺0:2-𝐺0:1)*𝜆+(𝐺0:3-𝐺0:2)*𝜆^2 +(𝐺0:4-𝐺0:3)*𝜆^3+(𝐺0:5-𝐺0:4)*𝜆^4+(-𝐺0:5)*𝜆^5 = 0
+  }
 
 ```
 
