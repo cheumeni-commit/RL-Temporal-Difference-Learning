@@ -33,10 +33,11 @@ Pour résoudre ce problème, nous avons déterminé :
 
 Le but étant de trouver la valeur de lambda qui permet d'obtenir les gains (rewards) et valeur données dans l'énoncé, ceci à partir des formules réquises 
 
-```BibTeX
-    𝑇𝐷(𝜆) return has the following form:
+𝑇𝐷(𝜆) return has the following form:
 
-        $${G_t^\lambda = \sum\limits_{n=1}^\infty(1-\lambda)\lambda^{n-1}G_{t:t+n}.}$$
+ $${G_t^\lambda = \sum\limits_{n=1}^\infty(1-\lambda)\lambda^{n-1}G_{t:t+n}.}$$
+
+```BibTeX
 
     For you MDP 𝑇𝐷(1) looks like this:
 
@@ -44,7 +45,7 @@ Le but étant de trouver la valeur de lambda qui permet d'obtenir les gains (rew
 
     𝑇𝐷(𝜆)  looks like this:
 
-        𝐺𝜆0=(1−𝜆)[𝜆0𝐺0:1+𝜆1𝐺0:2+𝜆2𝐺0:3+𝜆3𝐺0:4+𝜆4𝐺0:5]
+        𝐺𝜆0=(1−𝜆)[𝜆^0*𝐺0:1+𝜆^1*𝐺0:2+𝜆^2*𝐺0:3+𝜆^3*𝐺0:4+𝜆^4*𝐺0:5]
 
     enfin, il faudrait resoudre l'équation suivante pour obtenir la valuer de 𝜆:
         (𝐺0:1-G)+(𝐺0:2-𝐺0:1)*𝜆+(𝐺0:3-𝐺0:2)*𝜆^2 +(𝐺0:4-𝐺0:3)*𝜆^3+(𝐺0:5-𝐺0:4)*𝜆^4+(-𝐺0:5)*𝜆^5 = 0
@@ -52,10 +53,10 @@ Le but étant de trouver la valeur de lambda qui permet d'obtenir les gains (rew
 ```
 
 ```BibTeX
-@misc{jmc2022RL-MarkovDecisionProcessus,
+@misc{jmc2022RL-Temporal-Difference-Learning,
   author =       {Jean-Michel Cheumeni},
   title =        {RL},
-  howpublished = {\url{git@github.com:cheumeni-commit/RL-MarkovDecisionProcessus.git}},
-  year =         {2021}
+  howpublished = {\url{git@github.com:cheumeni-commit/RL-Temporal-Difference-Learning.git}},
+  year =         {2022}
 }
 ```
